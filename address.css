@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.header{
+  height: 110px;
+  background: #333333;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 70px;
+  padding-left: 70px;
+  float: left;
+  text-transform: uppercase;
+
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+ /* max-width: 900px;*/
+  margin: 10px 0;
+}
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+
+/*=============================================================*/
+
+    
+.popular_cakes{
+  padding: 5em 0;
+
+
+}
+h3.heading {
+    color: #000;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.map {
+  padding: 1.5em 1.5em 1.2em;
+  background: #dfdfdf;
+ 
+}
+
+.map iframe {
+  width: 100%;
+  min-height: 500px;
+  border: none;
+
+}
+
+/*==============================================================================*/
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: #d9d9d9;
+}
+
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+.box .content{
+  margin: 20px 0 0 0;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0px 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+
